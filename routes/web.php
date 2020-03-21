@@ -207,16 +207,16 @@ Route::group(['middleware' => 'auth'],function(){
 	
 });	
 
-Route::get('/clc', function() {
+// Route::get('/clc', function() {
 
-    Artisan::call('cache:clear');
-    Artisan::call('config:clear');
-    Artisan::call('config:cache');
-    Artisan::call('view:clear');
-        // Artisan::call('view:clear');
-        // session()->forget('key');
-    return "Cleared!";
-});
+//     Artisan::call('cache:clear');
+//     Artisan::call('config:clear');
+//     Artisan::call('config:cache');
+//     Artisan::call('view:clear');
+//         // Artisan::call('view:clear');
+//         // session()->forget('key');
+//     return "Cleared!";
+// });
 
 
 Auth::routes();
