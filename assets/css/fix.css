@@ -1,0 +1,466 @@
+/* line 2, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.clearfix:after, .top-menu-option:after, .pos .table-order:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 9, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.clear {
+  width: 100%;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+/* line 15, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.btn-gradient, .numpad .num-sign a, .numpad .num-block .num-holder a {
+  padding: 10px;
+  color: #414141;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 3px black;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(#f6f6f6 0%, #dddddd 5%, #f6f6f6 40%, #dddddd 92%, #eeeeee 100%);
+}
+
+/* line 27, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.btn-gradient:hover, .numpad .num-sign a:hover, .numpad .num-block .num-holder a:hover {
+  background: -webkit-linear-gradient(#FFF8DC 0%, #F5DEB3 5%, #DEB887 40%, #F5DEB3 92%, #FFF8DC 100%);
+}
+
+/* line 31, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.top-menu-option {
+  padding-bottom: 15px;
+}
+
+/* line 34, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.top-menu-option.al-right {
+  text-align: right;
+}
+
+/* line 38, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.al-right {
+  text-align: right;
+}
+
+/* line 42, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.panel-search .btn-search {
+  margin-top: 20px;
+}
+
+/* line 47, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table .product-img {
+  max-width: 70px;
+  margin: auto;
+}
+
+/* line 51, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table .barcode-img {
+  max-width: 110px;
+  margin: auto;
+}
+
+/* line 55, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table .action-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* line 61, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table .action-menu li {
+  float: left;
+  padding: 3px;
+}
+
+/* line 64, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table .action-menu li a {
+  font-size: 18px;
+}
+
+/* line 66, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table .action-menu li a.search {
+  color: #00acac;
+}
+
+/* line 69, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table .action-menu li a.stockcard {
+  color: gray;
+}
+
+/* line 72, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table .action-menu li a.edit {
+  color: orange;
+}
+
+/* line 75, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table .action-menu li a.trash {
+  color: red;
+}
+
+/* line 78, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table .action-menu li a.plus {
+  color: #8c8c8c;
+}
+
+/* line 81, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table .action-menu li a.minus {
+  color: #8c8c8c;
+}
+
+/* line 84, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table .action-menu li a:hover {
+  color: black;
+}
+
+/* line 91, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table .checkbox-col {
+  width: 5%;
+  text-align: center;
+}
+
+/* line 95, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table .action-col {
+  width: 20%;
+  text-align: center;
+}
+
+/* line 100, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table span.red {
+  color: red !important;
+}
+
+/* line 103, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table span.green {
+  color: #228B22 !important;
+}
+
+/* line 107, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table th {
+  white-space: nowrap;
+}
+
+/* line 110, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.product-table .name-col {
+  white-space: nowrap;
+}
+
+/* line 114, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.preview-text {
+  padding-top: 6px;
+  font-size: 13px;
+  color: black;
+}
+
+/* line 119, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.table-frame {
+  width: 100%;
+  overflow: auto;
+}
+
+/* line 124, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.order-table .number-box {
+  max-width: 80px;
+}
+
+/* line 129, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.summary .summary-box {
+  text-align: right;
+}
+
+/* line 131, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.summary .summary-box[disabled] {
+  background-color: white;
+  opacity: 1;
+  color: black;
+  font-weight: bold;
+}
+
+/* line 138, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.summary label {
+  font-weight: bold;
+}
+
+/* line 143, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.summary .control-label {
+  white-space: nowrap;
+}
+
+/* line 147, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.stock-header-table {
+  width: auto;
+}
+
+/* line 149, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.stock-header-table th {
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* line 155, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.stock-header-table th:first-child {
+  width: 40%;
+}
+
+/* line 159, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.stock-header-table td {
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* line 163, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.stock-header-table tr {
+  border: none;
+}
+
+/* line 168, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.stock-card-table th {
+  text-align: center;
+  vertical-align: middle !important;
+}
+
+/* line 172, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.stock-card-table td {
+  text-align: center;
+}
+
+/* line 175, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.stock-card-table .num {
+  text-align: right;
+}
+
+/* line 179, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.stock-card-table .total-row td {
+  background-color: white !important;
+  font-weight: bold;
+  color: black;
+}
+
+/* line 186, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.pos {
+  box-sizing: border-box;
+  min-width: 1024px;
+}
+
+/* line 189, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.pos .pace {
+  display: none !important;
+}
+
+/* line 192, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.pos .flex-container {
+  min-width: 1024px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 200, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.pos .pos-col {
+  flex-grow: 5;
+  padding: 15px;
+}
+
+/* line 203, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.pos .pos-col:first-child {
+  max-width: 70%;
+  border-right: 1px solid #d0d0d0;
+}
+
+/* line 207, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.pos .pos-col:last-child {
+  flex-grow: 1;
+  border-left: 1px solid #f9f9f9;
+}
+
+/* line 212, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.pos .price-output {
+  background-color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #38cf0e;
+  font-size: 50px;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+/* line 221, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.pos .table-order {
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+/* line 225, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.pos .table-order .order-table {
+  margin-top: 0 !important;
+}
+
+/* line 228, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.pos .table-order .order-table .product-img img {
+  max-width: 50px;
+  height: auto;
+}
+
+/* line 234, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.pos .table-order .order-table tr td {
+  vertical-align: middle;
+}
+
+/* line 239, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.pos .table-order .dataTables_filter, .pos .table-order .dataTables_info {
+  display: none;
+}
+
+/* line 243, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.pos .table-order .sorting:after {
+  content: "";
+}
+
+/* line 248, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.pos .dataTables_scrollBody {
+  height: 250px !important;
+}
+
+/* line 251, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.pos .system-title {
+  margin: 0;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #bb7428;
+  color: white;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+/* line 262, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.numpad {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  border: 1px solid #f9f9f9;
+  border-radius: 3px;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+/* line 270, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.numpad .numpad-maincol {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: padding-box;
+}
+
+/* line 275, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.numpad .numpad-maincol:first-child {
+  flex-grow: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 281, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.numpad .num-sign {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
+}
+
+/* line 287, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.numpad .num-sign .num-holder {
+  position: relative;
+  flex-grow: 1;
+}
+
+/* line 291, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.numpad .num-sign a {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 297, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.numpad .num-sign a span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+/* line 308, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.numpad .num-row {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 313, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.numpad .num-block {
+  flex-grow: 1;
+  min-width: 25%;
+  display: inline;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+/* line 320, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.numpad .num-block .num-holder {
+  position: relative;
+  flex: 1;
+}
+
+/* line 323, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.numpad .num-block .num-holder a {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 329, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+.numpad .num-block .num-holder a span {
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+/* line 343, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+#customer-table_filter {
+  display: none;
+}
+
+/* line 346, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+#customer-table_wrapper table {
+  min-width: 550px;
+  max-width: 550px !important;
+}
+
+/* line 350, /Volumes/Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/warehouse/assets/css/fix.scss */
+#customer-table_wrapper .dataTables_scrollHeadInner {
+  display: none;
+}

@@ -1,0 +1,325 @@
+@extends('../template')
+
+@section('content')
+<!-- Main content -->
+<div class="content-wrapper">
+
+	<!-- Page header -->
+	<div class="page-header page-header-default">
+		<div class="page-header-content">
+			<div class="page-title">
+				<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">ซัพพลายเออร์</span></h4>
+			</div>
+
+			
+		</div>
+
+		<div class="breadcrumb-line">
+			<ul class="breadcrumb">
+				<li><a href="{{url('/')}}"><i class="icon-home2 position-left"></i> หน้าแรก</a></li>
+				<li><a href="{{url('supplier')}}">ซัพพลายเออร์</a></li>
+				<li class="active">เพิ่มซัพพลายเออร์</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /page header -->
+
+
+	<!-- Content area -->
+	<div class="content">
+		<!-- 2 columns form -->
+			<div class="panel panel-flat">
+				<div class="panel-heading">
+					<h5 class="panel-title">เพิ่มซัพพลายเออร์ </h5>
+					<div class="heading-elements">
+						<ul class="icons-list">
+							<li><a data-action="collapse"></a></li>
+							<li><a data-action="reload"></a></li>
+							<li><a data-action="close"></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<form id="myForm" method="post" action="{{url('supplier_create')}}">
+				{{ csrf_field() }}
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-6 col-md-6 col-md-offset-3">
+							<fieldset>
+								<legend class="text-semibold">ข้อมูลซัพพลายเออร์</legend>
+								<div class="form-group">
+									<label>เลขประจำตัวผู้เสียภาษีอากร :</label>
+									<div class="input-control">
+										<input type="text" class="form-control" name="tax" id="tax" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label>ชื่อซัพพลายเออร์ :</label>
+									<div class="input-control">
+										<input type="text" class="form-control" name="name" id="name" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label>เบอร์ติดต่อ :</label>
+									<div class="input-control">
+										<input type="text" class="form-control number" name="tel" id="tel" maxlength="10">
+									</div>
+								</div>
+								<div class="form-group">
+									<label>แฟกซ์ :</label>
+									<div class="input-control">
+										<input type="text" class="form-control number" name="fax" id="fax" maxlength="9">
+									</div>
+								</div>
+								<div class="form-group">
+									<label>อีเมล์ :</label>
+									<div class="input-control">
+										<input type="email" class="form-control" name="email" id="email">
+									</div>
+								</div>
+								<div class="form-group">
+									<label>ที่อยู่ปัจจุบัน :</label>
+									<div class="input-control">
+										<textarea name="address" class="form-control" style="resize: vertical;" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label>ที่อยู่ตามทะเบียนบ้าน :</label>
+									<div class="input-control">
+										<textarea name="addresshome" class="form-control" style="resize: vertical;" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label>ที่อยู่ส่งเอกสาร :</label>
+									<div class="input-control">
+										<textarea name="addressdoc" class="form-control" style="resize: vertical;" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-5">
+										<label>สาขา :</label>
+									</div>
+									<div class="col-md-5">
+										<label>ที่อยู่ :</label>
+									</div>
+									<input type="hidden" id="countrow2" value="1">
+									<div id="rowcontactes">
+										<div class="col-md-5">
+											<div class="input-control">
+												<input type="text" class="form-control" name="subbranch[]" id="subbranch1">
+											</div>
+										</div>
+										<div class="col-md-5">
+											<div class="input-control">
+												<input type="text" class="form-control number" name="subaddress[]" id="subaddress1">
+											</div>
+										</div>
+										<div class="col-md-2">
+											<div class="input-control">
+												<button type="button" class="btn btn-success btn-icon addrow2"><i class="icon-plus-circle2"></i></button><br><br>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								<div class="form-group">
+									<label>เครดิต :</label>
+									<div class="input-control">
+										<select name="credit" id="credit" class="form-control">
+											<option value="">---- เลือกเครดิต ----</option>
+											<option value="เครดิต 30 วัน">เครดิต 30 วัน</option>
+											<option value="เครดิต 45 วัน">เครดิต 45 วัน</option>
+											<option value="เครดิต 90 วัน">เครดิต 90 วัน</option>
+											<option value="เครดิต 100 วัน">เครดิต 100 วัน</option>
+											<option value="เครดิต 120 วัน">เครดิต 120 วัน</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-5">
+										<label>ผู้ติดต่อ :</label>
+									</div>
+									<div class="col-md-5">
+										<label>เบอร์ติดต่อ :</label>
+									</div>
+									<input type="hidden" id="countrow" value="1">
+									<div id="rowcontact">
+										<div class="col-md-5">
+											<div class="input-control">
+												<input type="text" class="form-control" name="supconname[]" id="supconname1">
+											</div>
+										</div>
+										<div class="col-md-5">
+											<div class="input-control">
+												<input type="text" class="form-control number" name="subcontel[]" id="subcontel1">
+											</div>
+										</div>
+										<div class="col-md-2">
+											<div class="input-control">
+												<button type="button" class="btn btn-success btn-icon addrow"><i class="icon-plus-circle2"></i></button><br><br>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								<div class="form-group">
+									<label>หมายเหตุ :</label>
+									<div class="input-control">
+										<textarea name="note" class="form-control" style="resize: vertical;" rows="3"></textarea>
+									</div>
+								</div>
+								<br>
+								<div class="text-right">
+									<a href="{{url('supplier')}}"><button type="button" class="btn btn-danger"><i class="icon-rotate-ccw3"></i>  ยกเลิก</button></a>
+									<button type="button" id="save" class="btn btn-primary"><i class="icon-floppy-disk"></i>  บันทึก</button>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+				</div>
+				</form>
+			</div>
+		<!-- /2 columns form -->
+	
+
+
+		<!-- Footer -->
+		<div class="footer text-muted">
+			&copy; 2016-2017. <a href="https://www.orange-thailand.com">Orange Technology Solution</a>
+		</div>
+		<!-- /footer -->
+
+	</div>
+	<!-- /content area -->
+
+</div>
+<!-- /main content -->
+
+</div>
+<!-- /page content -->
+
+</div>
+<!-- /page container -->
+
+</body>
+<script>
+	$('#save').click(function(){
+		$('#myForm').submit(); 
+	});
+	
+	$('.addrow').click(function(){
+		var countrow = $('#countrow').val();
+		var sumrow = countrow+1; 
+		$('#countrow').val(sumrow);
+		
+		$('#rowcontact').append('<div id="rowcontacts'+sumrow+'"><div class="col-md-5">'
+			+'<div class="input-control">'
+				+'<input type="text" class="form-control" name="supconname[]" id="supconname'+sumrow+'" required>'
+			+'</div>'
+		+'</div>'
+		+'<div class="col-md-5">'
+			+'<div class="input-control">'
+				+'<input type="text" class="form-control number" name="subcontel[]" id="subcontel'+sumrow+'" onkeypress="return isNumberKey(event);">'
+			+'</div>'
+		+'</div>'
+		+'<div class="col-md-2">'
+			+'<div class="input-control">'
+				+'<button type="button" class="btn btn-success btn-icon" onclick="addrow()"><i class="icon-plus-circle2"></i></button> <button type="button" class="btn btn-danger btn-icon minus" onclick="del('+sumrow+')"><i class="icon-minus-circle2"></i></button><br><br>'
+			+'</div>'
+		+'</div></div>');
+	});
+	
+	function addrow(id){
+		var countrow = $('#countrow').val();
+		var sumrow = countrow+1; 
+		$('#countrow').val(sumrow);
+		
+		$('#rowcontact').append('<div id="rowcontacts'+sumrow+'"><div class="col-md-5">'
+			+'<div class="input-control">'
+				+'<input type="text" class="form-control" name="supconname[]" id="supconname'+sumrow+'" required>'
+			+'</div>'
+		+'</div>'
+		+'<div class="col-md-5">'
+			+'<div class="input-control">'
+				+'<input type="text" class="form-control number" name="subcontel[]" id="subcontel'+sumrow+'" onkeypress="return isNumberKey(event);">'
+			+'</div>'
+		+'</div>'
+		+'<div class="col-md-2">'
+			+'<div class="input-control">'
+				+'<button type="button" class="btn btn-success btn-icon" onclick="addrow('+sumrow+')"><i class="icon-plus-circle2"></i></button> <button type="button" class="btn btn-danger btn-icon minus" onclick="del('+sumrow+')"><i class="icon-minus-circle2"></i></button><br><br>'
+			+'</div>'
+		+'</div></div>');
+	}
+	
+	function del(id){
+		var countrow = $('#countrow').val();
+		var sumrow = countrow-1; 
+		$('#countrow').val(sumrow);
+		$('#rowcontacts'+id).remove();
+	}
+	
+	function isNumberKey(event){
+		var key = window.event ? event.keyCode : event.which;
+		if (event.keyCode === 8 || event.keyCode === 46){
+			return true;
+		}else if ( key < 48 || key > 57 ){
+			return false;
+		}else{
+			return true;
+		}
+	};
+
+	$('.addrow2').click(function(){
+		var countrow = $('#countrow2').val();
+		var sumrow = countrow+1; 
+		$('#countrow2').val(sumrow);
+		
+		$('#rowcontactes').append('<div id="rowcontactss'+sumrow+'"><div class="col-md-5">'
+			+'<div class="input-control">'
+				+'<input type="text" class="form-control" name="subbranch[]" id="subbranch'+sumrow+'" required>'
+			+'</div>'
+		+'</div>'
+		+'<div class="col-md-5">'
+			+'<div class="input-control">'
+				+'<input type="text" class="form-control number" name="subaddress[]" id="subaddress'+sumrow+'" >'
+			+'</div>'
+		+'</div>'
+		+'<div class="col-md-2">'
+			+'<div class="input-control">'
+				+'<button type="button" class="btn btn-success btn-icon" onclick="addrow2()"><i class="icon-plus-circle2"></i></button> <button type="button" class="btn btn-danger btn-icon minus" onclick="del2('+sumrow+')"><i class="icon-minus-circle2"></i></button><br><br>'
+			+'</div>'
+		+'</div></div>');
+	});
+
+	function addrow2(id){
+		var countrow = $('#countrow').val();
+		var sumrow = countrow+1; 
+		$('#countrow').val(sumrow);
+		
+		$('#rowcontactes').append('<div id="rowcontactss'+sumrow+'"><div class="col-md-5">'
+			+'<div class="input-control">'
+				+'<input type="text" class="form-control" name="supconname[]" id="supconname'+sumrow+'" required>'
+			+'</div>'
+		+'</div>'
+		+'<div class="col-md-5">'
+			+'<div class="input-control">'
+				+'<input type="text" class="form-control number" name="subcontel[]" id="subcontel'+sumrow+'" onkeypress="return isNumberKey(event);">'
+			+'</div>'
+		+'</div>'
+		+'<div class="col-md-2">'
+			+'<div class="input-control">'
+				+'<button type="button" class="btn btn-success btn-icon" onclick="addrow('+sumrow+')"><i class="icon-plus-circle2"></i></button> <button type="button" class="btn btn-danger btn-icon minus" onclick="del2('+sumrow+')"><i class="icon-minus-circle2"></i></button><br><br>'
+			+'</div>'
+		+'</div></div>');
+	}
+
+	function del2(id){
+		var countrow = $('#countrow2').val();
+		var sumrow = countrow-1; 
+		$('#countrow2').val(sumrow);
+		$('#rowcontactss'+id).remove();
+	}
+	
+</script>
+</html>
+@stop
